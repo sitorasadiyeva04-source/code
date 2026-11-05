@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя QR-Визитка ✨</title>
+    <link rel="stylesheet" href="style.css">
+   
+    
+</head>
+<body>
+
+    <h1 class="page-title"> QR proekt 💖</h1>
+
+    <div class="main-wrapper">
+        <!-- Блок ввода данных -->
+        <div class="cute-card">
+            <h2>Данные визитки</h2>
+            <p class="subtitle">Заполните поля ниже</p>
+            
+            <div class="field">
+                <label>Имя и фамилия</label>
+                <input type="text" id="nameInput">
+            </div>
+
+            <div class="field">
+                <label>Телефон</label>
+                <input type="text" id="phoneInput">
+            </div>
+
+            <div class="field">
+                <label>Веб-сайт</label>
+                <input type="text" id="webInput">
+            </div>
+
+            <div class="field">
+                <label>E-mail</label>
+                <input type="text" id="emailInput">
+            </div>
+
+            <div class="field">
+                <label>Профессия</label>
+                <input type="text" id="jobInput">
+            </div>
+
+            <div class="field">
+                <label>Город</label>
+                <input type="text" id="cityInput">
+            </div>
+
+            <button id="createBtn">Сгенерировать QR ✨</button>
+        </div>
+
+        <!-- Блок вывода QR-кода -->
+        <div class="cute-card align-center">
+            <h2>Ваш QR-код</h2>
+            <div class="qr-border">
+                <div id="qrBox"></div>
+            </div>
+            
+            <p class="subtitle left-text">Что внутри (vCard):</p>
+            <div id="vcardText" class="code-box"></div>
+        </div>
+
+        
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>
